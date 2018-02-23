@@ -1,0 +1,13 @@
+header, section, footer {
+    width: 100vw
+}
+
+header {
+    height: 5%;
+    background-color: #aabb97
+}
+
+section {
+    height: 90%;
+    background-color: #bbbbbb
+}
