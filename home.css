@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Pridi:200,700');
 
 body {
-    background: #F5F5F6;
+    background: ##fffffb;
     margin: 0;
     padding: 0;
     font-family: 'Pridi', serif;
@@ -20,29 +20,44 @@ nav {
     padding: 0 6%;
     box-sizing: border-box;
     width: 100vw;
-    height: 20vh;
-    background: #dcedc7;
+    height: 110px;
+    background: rgb(170, 187, 151);
     font-size: 1.1em;
-
+    z-index: 999;
+    text-align: center;
 }
 
 /* display nav as inline and remove list bullet*/
 nav ul {
     list-style-type: none;
-    float: right;
+    text-align: center;
+}
+
+nav .logo {
+    margin-top: 0;
+    padding-top: 1%;
+
 }
 
 /* make it herizontal */
-nav .logo{
-    float: left;
-}
-
 nav li {
     display: inline;
 }
 
+nav li:not(.first) {
+    margin-left: 9%;
+}
+
 nav li a {
-    margin-left: 15px;
     text-decoration: none;
-    color: #000;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+/* 2. header image setup */
+
+/* setup */
+header .header-img {
+    width: 100%;
+    height: auto;
+    object-fit: fill;
 }
