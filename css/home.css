@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Pridi:200,700');
+
+body {
+    background: #fffffb;
+    margin: 0;
+    padding: 0;
+    font-family: 'Pridi', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* clear float */
+.clear {
+    clear: both;
+}
+
+/* //////////////////////////////all about header\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+/* extra: logo */
+
+.logo {
+    width: 100vw;
+    height: auto;
+    background: rgb(170, 187, 151);
+    text-align: center;
+    margin: 0;
+    padding: 5px 0 12px 0;
+}
+
+/* 1. navbar, menus */
+
+/* setup */
+nav {
+    /* position: absolute; */
+    margin-top: -5px;
+    /* margin: 0; */
+    padding: 2px 6%;
+    box-sizing: border-box;
+    width: 100vw;
+    height: auto;
+    background: #dcedc8;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+/* display nav as inline and remove list bullet*/
+nav ul {
+    list-style-type: none;
+}
+
+/* make it herizontal */
+nav li {
+    display: inline;
+}
+
+/* select all <li> except .first */
+nav li:not(.first) {
+    margin-left: 9%;
+}
+
+nav li a {
+    color: rgba(0, 0, 0, 0.54);
+}
