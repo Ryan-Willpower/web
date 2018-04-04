@@ -7,52 +7,13 @@
 	<title>Food Court</title>
 	<link href="https://fonts.googleapis.com/css?family=Sriracha" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.min.css" />
-
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/vendors/jquery.easings.min.js"></script>
 	<!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/vendors/scrolloverflow.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.min.js"></script>
-	<style>
-		html {
-			font-family: 'Sriracha', cursive;
-		}
-		#fp-nav ul li a span {
-			background: #FFF;
-		}
-		.section {
-			background-size: cover;
-			text-align: center;
-		}
-		#one {
-			background-image: linear-gradient(
-                     rgba(20,20,20, .7), 
-                     rgba(20,20,20, .7)),
-					 url(../img/img1.jpg);
-			
-			color: #FFF;
-			letter-spacing: 3px;
-			width: 100%;
-		}
-		.border {
-			margin: 0 10%;
-			padding: 5%;
-			border: 3px solid #FFF;
-		}
-		#one h1 {
-			transform: translateY(-50%);
-			position: relative;
-			letter-spacing: 3px;
-			font-size: 4em;
-			font-weight: 100;
-		}
-		#one p {
-			transform: translateY(-50%);
-			position: relative;
-			font-size: 2em;
-		}
-	</style>
 </head>
 <body>
 	<div id="fullpage">
@@ -60,88 +21,17 @@
 			<div class="border">
 				<h1>Food Court</h1>
 				<p>สถานีรวมรีวิวอาหารที่ทำให้คุณอิ่มได้ผ่านสายแลน</p>
+				<div class="scroll-downs">
+					<div class="mousey">
+						<div class="scroller"></div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="section">Some section</div>
 		<div class="section">Some section</div>
 		<div class="section">Some section</div>
 	</div>
-	<script>
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				//Navigation
-				menu: '#menu',
-				lockAnchors: false,
-				anchors:['home', 'blog', ],
-				navigation: true,
-				navigationPosition: 'right',
-				navigationTooltips: ['home', 'blog', ],
-				showActiveTooltip: false,
-				slidesNavigation: false,
-				slidesNavPosition: 'bottom',
-
-				//Scrolling
-				css3: true,
-				scrollingSpeed: 700,
-				autoScrolling: true,
-				fitToSection: true,
-				fitToSectionDelay: 1000,
-				scrollBar: false,
-				easing: 'easeInOutCubic',
-				easingcss3: 'ease',
-				loopBottom: false,
-				loopTop: false,
-				loopHorizontal: true,
-				continuousVertical: false,
-				continuousHorizontal: false,
-				scrollHorizontally: false,
-				interlockedSlides: false,
-				dragAndMove: false,
-				offsetSections: false,
-				resetSliders: false,
-				fadingEffect: false,
-				normalScrollElements: '#element1, .element2',
-				scrollOverflow: false,
-				scrollOverflowReset: false,
-				scrollOverflowOptions: null,
-				touchSensitivity: 15,
-				normalScrollElementTouchThreshold: 5,
-				bigSectionsDestination: null,
-
-				//Accessibility
-				keyboardScrolling: true,
-				animateAnchor: true,
-				recordHistory: true,
-
-				//Design
-				controlArrows: true,
-				verticalCentered: true,
-				sectionsColor : ['#ccc', '#fff'],
-				paddingTop: '3em',
-				paddingBottom: '10px',
-				fixedElements: '#header, .footer',
-				responsiveWidth: 0,
-				responsiveHeight: 0,
-				responsiveSlides: false,
-				parallax: true,
-				parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
-
-				//Custom selectors
-				sectionSelector: '.section',
-				slideSelector: '.slide',
-
-				lazyLoading: true,
-
-				//events
-				onLeave: function(index, nextIndex, direction){},
-				afterLoad: function(anchorLink, index){},
-				afterRender: function(){},
-				afterResize: function(){},
-				afterResponsive: function(isResponsive){},
-				afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
-				onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
-			});
-		});
-	</script>
+	<script src="./js/fullpage.conf.js"></script>
 </body>
 </html>
