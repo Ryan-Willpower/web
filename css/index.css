@@ -2,23 +2,14 @@ html {
     font-family: 'Sriracha', cursive;
 }
 
+/* side nav setup */
 #fp-nav ul li a span {
     background: #FFF;
 }
 
+/* class */
 .section {
     background-size: cover;
-    text-align: center;
-}
-
-#one {
-    background-image: linear-gradient(
-             rgba(20,20,20, .7), 
-             rgba(20,20,20, .7)),
-             url(../img/img1.jpg);
-    color: #FFF;
-    letter-spacing: 3px;
-    width: 100%;
 }
 
 .border {
@@ -27,6 +18,25 @@ html {
     padding: 10% 0 5% 0;
     border: 3px solid #FFF;
 }
+
+.line {
+    border-bottom: 3px solid #FFF;
+    width: 40%;
+    margin: 0 auto;
+}
+
+/* page one */
+#one {
+    background-image: linear-gradient(
+             rgba(20,20,20, .7),
+             rgba(20,20,20, .7)),
+             url(../img/img1.jpg);
+    color: #FFF;
+    letter-spacing: 3px;
+    width: 100%;
+    text-align: center;
+}
+
 #one h1 {
     transform: translateY(-50%);
     position: relative;
@@ -38,6 +48,47 @@ html {
     transform: translateY(-50%);
     position: relative;
     font-size: 2em;
+}
+
+/* page two */
+#two {
+    background-image: linear-gradient(
+             rgba(20,20,20, .7),
+             rgba(20,20,20, .7)),
+             url(../img/img2.jpg);
+    color: #FFF;
+}
+
+#two h1 {
+    text-align: center;
+}
+
+#two .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 2% auto 0 auto;
+}
+
+#two .card-content {
+    width: 20%;
+    text-align: center;
+    border: 2px solid white;
+}
+
+#two .card-content img {
+    width: 100%;
+}
+
+#two .card-content .content {
+    padding: 8px;
+}
+
+@media screen and (max-width: 925px) {
+    #two .card-content {
+        width: 80%;
+        margin-bottom: 5%;
+    }
 }
 
 /* mouse animation */
