@@ -1,0 +1,58 @@
+.main {
+    color: white;
+    background: rgba(63, 74, 77, 0.534);
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 3%;
+    padding-bottom: 3%;
+}
+
+.main h2 {
+    text-align: center;
+}
+
+.cardbox {
+    margin-top: 2%;
+    display: flex;
+    height: 300px;
+    box-sizing: border-box;
+    border: 2px solid white;
+    padding: 2%;
+}
+
+.cardbox .img {
+    flex: 4 1 30%;
+    margin-right: 2%;
+    align-self: center;
+}
+
+.cardbox .content {
+    flex: 5 1 60%;
+    align-self: center;
+}
+
+@media screen and (max-width: 915px) {
+    .cardbox {
+        flex: 100%;
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .img {
+        width: 100%;
+    }
+
+    .img img {
+        width: 100;
+    }
+}
+
+a {
+    color: rgb(0, 35, 41);
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(134, 134, 134);
+}
