@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		nav {
+			box-sizing: border-box;
+			width: 100%;
+			height: 50px;
+			padding-left: 10%;
+			padding-right: 10%;
+			background: burlywood;
+		}
+		nav .logo {
+			padding-top: 16px;
+			float: left;
+		}
+		nav ul {
+			list-style-type: none;
+			float: right;
+		}
+		nav li {
+			display: inline;
+		}
+		nav a {
+			text-decoration: none;
+			color: black;
+		}
+		nav a:hover {
+			color: white;
+		}
+		nav li:not(#first-li) {
+			margin-left: 25px;
+		}
+		section {
+			padding-left: 10%;
+			padding-right: 10%;
+		}
+		.overlay-text {
+			box-sizing: border-box;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background: rgba(255, 255, 255, 0.3);
+			width: 100%;
+			height: 10%;
+			min-height: 10%;
+			text-align: center;
+			padding-top: 25px;
+		}
+		.line {
+			border-bottom: 1px solid black;
+
+		}
+		.checked {
+			color: orange;
+		}
+		
+	</style>
+</head>
+<body>
+	<nav>
+		<div class="logo">logo</div>
+		<ul>
+			<li id="first-li"><a href="index.html">Home</a></li>
+			<li><a href="review.html">Review</a></li>
+			<li><a href="recipe.html">Recipe</a></li>
+			<li><a href="ranking.html">Top 5</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	<section>
+		<article id="first">
+			<div class="head-img">
+				<img src="./img/review/th-p-4.jpg" width="100%">
+				<h3><span class="overlay-text">ข้าวแกงถนัดแ*ก </span></h3>
+			</div>
+			<h2>ข้าวแกงถนัดแ*ก</h2>
+			<div class="line"></div>
+			<!-- content here -->
+			<p>	ร้านข้าวแกงถนัดแ*ก เดลิเวอรี อร่อยแบบ “ยอมพุงแตก ดีกว่าแ*กไม่เป็น” </p>
+			<center><img src="./img/review/4-1.jpg" width="30%" height="30%">
+			<p>หลังจากตระเวนแ*กอาหารแทบทุกชนิดมาแล้วทั่วราชอาณาจักรไทย จนรายการ “หม่อมถนัดแ*ก” กวาดยอดทางยูทูปทะลุ 40 ล้านวิวไปเรียบร้อยแล้วนั้น หม่อมถนัดแ*กจึงเกิดดำริใหม่…ทำไมผู้เชี่ยวชาญการแ*กอย่างเราจึงไม่เปิดร้านอาหารเองซะเลยล่ะ!? จะได้ปรุงให้มันถูกใจสไตล์หม่อม แถมคนอื่นๆ ยังสามารถร่วมแ*กได้อีกด้วย เออ…ความคิดดีเว้ยเฮ้ย! </p>
+			<center><img src="./img/review/4-2.jpg" width="30%" height="30%">
+			<p>แต่อาหารแบบไหนที่พี่น้องคนไทยจะร่วมแ*กกันได้อย่างถูกจริตที่สุดนั้น หม่อมคิดว่า “ข้าวแกง” คือคำตอบ เพราะแ*กกันได้ทุกเพศ ทุกวัย ทุกที่ และทุกวัน! บางวันก็ทุกมื้อ!! แถมไม่แพงอีกต่างหาก ปรุงด้วยใจสไตล์คนรักการแ*ก ให้ทุกกล่องอร่อยสะปาก อิ่มสะใจ สะอาดปลอดภัย ไร้สารกันบูด สหัสวรรษ ชอบชิงชัย``หม่อมถนัดแ*ก`` “ข้าวแกงถนัดแ*ก” คือร้านข้าวแกงที่คุณจะได้พุงแตกกับอาหารสไตล์ภาคกลางรสชาติเข้มข้น ปรุงแบบดั้งเดิมสุดๆ ด้วยสูตรลับจากหม่อมแม่ของหม่อมเอง ตำพริกแกงกันสดๆ ให้ละเอียดคาครก เพื่อดึงกลิ่นหอมและความแตกมันของสมุนไพรออกมาแบบไม่เหลือซาก ทุกคำจึงถึงรสถึงชาติและถึงใจ </p>
+			<center><img src="./img/review/4-3.jpg" width="30%" height="30%">
+			<p>ถามว่าเหนื่อยไหม? บ้านไม่มีเครื่องปั่นไง้? ก็เพราะนี่คือเอกลักษณ์ของเครื่องแกงไทยที่ไม่มีชาติใดเหมือน ใครไม่ทำแต่ร้านกูทำ! รับรองว่าคุณจะได้แ*กข้าวแกงรสชาติไทยแท้และดั้งเดิมที่หาแ*กได้ยากเต็มที ในราคาที่กระเป๋าตังค์ต้องฉีกยิ้ม แถมบริการเดลิเวอรี ส่งถึงที่ พร้อมเสิร์ฟทั้งที่ออฟฟิศ งานประชุม งานอีเวนท์ งานออกกอง กีฬาสี ฯลฯ หรือจะให้จัดเลี้ยงนอกสถานที่หม่อมก็จัดให้ได้ครับ!</p>
+			<div class="line"></div>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+		</article>
+	</section>
+</body>
+</html>
