@@ -6,101 +6,41 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<style>
-		body {
-			margin: 0;
-			padding: 0;
-		}
-		nav {
-			box-sizing: border-box;
-			width: 100%;
-			height: 50px;
-			padding-left: 10%;
-			padding-right: 10%;
-			background: burlywood;
-		}
-		nav .logo {
-			padding-top: 16px;
-			float: left;
-		}
-		nav ul {
-			list-style-type: none;
-			float: right;
-		}
-		nav li {
-			display: inline;
-		}
-		nav a {
-			text-decoration: none;
-			color: black;
-		}
-		nav a:hover {
-			color: white;
-		}
-		nav li:not(#first-li) {
-			margin-left: 25px;
-		}
-		section {
-			padding-left: 10%;
-			padding-right: 10%;
-		}
-		.overlay-text {
-			box-sizing: border-box;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			background: rgba(255, 255, 255, 0.3);
-			width: 100%;
-			height: 10%;
-			min-height: 10%;
-			text-align: center;
-			padding-top: 25px;
-		}
-		.line {
-			border-bottom: 1px solid black;
-
-		}
-		.checked {
-			color: orange;
-		}
-		
-	</style>
+	<link rel="stylesheet" href="./css/initial.css">
+	<link rel="stylesheet" href="./css/review.css">
 </head>
 <body>
 	<nav>
-		<div class="logo">logo</div>
-		<ul>
-			<li id="first-li"><a href="index.html">Home</a></li>
-			<li><a href="review.html">Review</a></li>
-			<li><a href="recipe.html">Recipe</a></li>
-			<li><a href="ranking.html">Top 5</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
-	</nav>
-	<section>
-		<article id="first">
-			<div class="head-img">
-				<img src="./img/review/th-p-3.jpg" width="100%">
-				<h3><span class="overlay-text">Salmonia (แซอลมอนเนีย)</span></h3>
-			</div>
-			<h2>Salmonia (แซอลมอนเนีย) avion สุวรรณภูมิ </h2>
-			<div class="line"></div>
-			<!-- content here -->
-			<p>	อาหาร buffet ญี่ปุ่น ราคาเบาๆ ร้านไม่ใหญ่มากนัก ไปกัน 4คน พอดีกำลังอยากกินซูชิพอดี </p>
-			<center><img src="./img/review/3-1.jpg" width="30%" height="30%">
-			<p>เลยจัดซะเลย ไปถึงได้โต๊ะเลย เพราะไปถึงดึกแล้ว มีว่างอยู่ 1โต๊ะพอดี ปกติต้องจอง เปิดเมนูมา หาซูซิก่อนเลย ไปเจอ แซลมอลเบิร์น จัดไป 4คำ หอมหวานมาก อีกจาน แซลมอลมาเนีย อันนี้มีเอกลักษณ์มาก อร่อยกลมกล่อม จานต่อมาก็ต้องซาซิมิ ร้านนี้มีชุดรวมชื่อว่า สวรรค์ชั้น 7 แหม่ นี่ฟังแล้วฟินเลยทีเดียว. หน้าตาน่าทานมากครับ ชุดนี้เลยจัดไป 4ชุด เจอแซลมอนชิ้นใหญ่คำโต โอ้โห บอกเลยสุดยอด หั่นมาแบบเต็มๆคำ </p>
-			<center><img src="./img/review/3-2.jpg" width="30%" height="30%">
-			<p>เปิดเมนูอีก เจอ แซลมอนคาปาซโซ่ ไม่พลาดสั่งเลย รสชาติดีหอมกลิ่นแอปเปิ้ลที่หั่นบางๆ สั่งเพิ่มอีก 2ชุด ทูน่าดิปก็เพลิน เป็นเกี๊ยวจิ้มกับซอสปลาทูน่า กลับมาต่อ ซูซิปลาไหล แต่อันนี้ไม่ค่อยชอบเท่าไร ยังมีไข่ปลาแซลมอนด้วยแต่ไปดึกแล้วของหมด เซงเลย มีหอยปีกนกด้วยแต่ไม่ได้สั่งครับ เครื่องดื่มจะมีชามะนาว ชาเขียว น้ำอัดลม น่ำเปล่า แต่ไม่มีของหวานนะ สั่งอาหารจะออกเป็นชุดๆ แนะนำให้สั่งไว้ก่อนเลย จะได้ไม่รอนาน </p>
-			<center><img src="./img/review/3-3.jpg" width="30%" height="30%">
-			<p>เพราะเขาทำตามที่สั่งสดๆ อย่างกุ้งเทมปุระ พอเราสั่งเขาถึงจะไปทอดดีไม่ได้ทอดทิ้งไว้ ชอบมาก แต่คือก็ต้องรอนานหน่อย ให้สั่งไว้ก่อนเลยดีกว่า </p>
-			<div class="line"></div><br/>
-			<span class="fa fa-star checked"></span>
-			<span class="fa fa-star checked"></span>
-			<span class="fa fa-star checked"></span>
-			<span class="fa fa-star checked"></span>
-			<span class="fa fa-star checked"></span><br/><br/><br/>
-		</article>
-	</section>
+        <div class="logo"><img src="./img/logo.png" width="100" height="55"></div>
+        <ul>
+            <li id="first-li"><a href="index.html">Home</a></li>
+            <li><a href="/index.html#review">Review</a></li>
+            <li><a href="recommend.html">Recommend Food</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+	<div class="main">
+		<img src="./img/review/th-p-3.jpg" width="100%">
+		<h2>Salmonia (แซอลมอนเนีย) avion สุวรรณภูมิ </h2>
+		<div class="line"></div>
+		<!-- content here -->
+		<p>	อาหาร buffet ญี่ปุ่น ราคาเบาๆ ร้านไม่ใหญ่มากนัก ไปกัน 4คน พอดีกำลังอยากกินซูชิพอดี </p>
+		<img src="./img/review/3-1.jpg" width="50%" class="center">
+		<p>เลยจัดซะเลย ไปถึงได้โต๊ะเลย เพราะไปถึงดึกแล้ว มีว่างอยู่ 1โต๊ะพอดี ปกติต้องจอง เปิดเมนูมา หาซูซิก่อนเลย ไปเจอ แซลมอลเบิร์น จัดไป 4คำ หอมหวานมาก อีกจาน แซลมอลมาเนีย อันนี้มีเอกลักษณ์มาก อร่อยกลมกล่อม จานต่อมาก็ต้องซาซิมิ ร้านนี้มีชุดรวมชื่อว่า สวรรค์ชั้น 7 แหม่ นี่ฟังแล้วฟินเลยทีเดียว. หน้าตาน่าทานมากครับ ชุดนี้เลยจัดไป 4ชุด เจอแซลมอนชิ้นใหญ่คำโต โอ้โห บอกเลยสุดยอด หั่นมาแบบเต็มๆคำ </p>
+		<img src="./img/review/3-2.jpg" width="50%" class="center">
+		<p>เปิดเมนูอีก เจอ แซลมอนคาปาซโซ่ ไม่พลาดสั่งเลย รสชาติดีหอมกลิ่นแอปเปิ้ลที่หั่นบางๆ สั่งเพิ่มอีก 2ชุด ทูน่าดิปก็เพลิน เป็นเกี๊ยวจิ้มกับซอสปลาทูน่า กลับมาต่อ ซูซิปลาไหล แต่อันนี้ไม่ค่อยชอบเท่าไร ยังมีไข่ปลาแซลมอนด้วยแต่ไปดึกแล้วของหมด เซงเลย มีหอยปีกนกด้วยแต่ไม่ได้สั่งครับ เครื่องดื่มจะมีชามะนาว ชาเขียว น้ำอัดลม น่ำเปล่า แต่ไม่มีของหวานนะ สั่งอาหารจะออกเป็นชุดๆ แนะนำให้สั่งไว้ก่อนเลย จะได้ไม่รอนาน </p>
+		<img src="./img/review/3-3.jpg" width="50%" class="center">
+		<p>เพราะเขาทำตามที่สั่งสดๆ อย่างกุ้งเทมปุระ พอเราสั่งเขาถึงจะไปทอดดีไม่ได้ทอดทิ้งไว้ ชอบมาก แต่คือก็ต้องรอนานหน่อย ให้สั่งไว้ก่อนเลยดีกว่า </p>
+		<div class="line"></div>
+		<div class="star">
+			<p>ร้านนี้เราให้ : 
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+			</p>
+		</div>
+	</div>
 </body>
 </html>

@@ -6,86 +6,82 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="./css/initial.css">
-    <style>
-        h2 {
-            text-align: center;
-        }
-
-        .cardbox {
-            margin-top: 2%;
-            display: flex;
-            flex: 100%;
-            height: 240px;
-            box-sizing: border-box;
-        }
-
-        .cardbox .img {
-            flex-grow: 4;
-            margin-right: 2%;
-        }
-
-        .cardbox .content {
-            flex-grow: 6;
-        }
-
-        .grayline {
-            border-bottom: 1px solid lightgray;
-            width: 90%;
-            margin: -2% auto;
-        }
-
-        @media screen and (max-width: 915px) {
-            .cardbox {
-                flex-wrap: wrap;
-                height: 100%;
-            }
-
-            .cardbox .img img {
-                width: 100%;
-                height: 100%;
-            }
-
-            .cardbox .content {
-                margin-top: 0;
-            }
-
-            .grayline {
-                margin: 0 auto;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="./css/recommend.css">
 </head>
 <body>
     <nav>
-        <div class="logo">logo</div>
+        <div class="logo"><img src="./img/logo.png" width="100" height="55"></div>
         <ul>
             <li id="first-li"><a href="index.html">Home</a></li>
-            <li><a href="review.html">Review</a></li>
+            <li><a href="/index.html#review">Review</a></li>
             <li><a href="recommend.html">Recommend Food</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
     <div class="main">
-        <section id="first">
-            <div class="head-img">
-                <img src="http://www.comesum.com/images/thali.jpg" width="100%">
-                <span class="overlay-text">Recommend Food</span>
+        <img src="./img/rec/pichead_rec.jpg" width="100%">
+        <h2>Recommend Food by Food Court</h2>
+        <div class="line"></div>
+        <div class="cardbox">
+            <div class="img">
+                <img src="./img/rec/picKhaoChae.jpg" width="100%"/>
             </div>
-            <h2>Recommend Food by Food Court</h2>
-            <div class="line"></div>
-                <article class="cardbox">
-                    <div class="img">
-                        <img src="https://images.theconversation.com/files/180401/original/file-20170731-22175-67v3q2.jpg?ixlib=rb-1.1.0&rect=0%2C589%2C5472%2C2654&q=45&auto=format&w=1356&h=668&fit=crop" width="100%"/>
-                    </div>
-                    <div class="content">
-                        <h1>Food1</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                </article>
-                <div class="grayline"></div>
+            <div class="content">
+                <h3>ข้าวแช่(Khao Chae)</h3>
+                <p>
+                    ถ้าจะให้แนะนำอาหารที่ฮอตฮิตที่สุดตอนนี้ คงจะหนีไม่พ้นอาหารไทยบ้านเรา ที่กระแสละครกำลังมาแรง จนทำให้ความเป็นไทยหลาย ๆ อย่างกลับคืนมา ไม่เว้นแม้กระทั่ง 'อาหารไทย' หลากหลายเมนู และที่อยากจะแนะนำให้ได้ลองกันนั้นก็คืออาหารชาววังหรือมีชื่อเรียกอีกอย่างหนึ่งว่า..
+                </p>
+				<span><a href="rec_1.html">อ่านต่อ >></a></span>
             </div>
-        </section>
+        </div>
+        <div class="cardbox">
+            <div class="img">
+                <img src="./img/rec/pictaco.jpg" width="100%"/>
+            </div>
+            <div class="content">
+                <h3>ทาโค (Taco)</h3>
+                <p>
+                    อีกหนึ่งเมนูน่าสนใจ และต้องแนะนำให้ลอง 'Taco'คืออาหารเม็กซิกัน ใครที่ชอบอาหารรสจัดต้องไปโดนซักครั้ง จะว่าไปแล้วรูปทรง Taco กับขนมเบื้องบ้านเรา ก็คล้ายๆกันเลย แต่ Taco เป็นอาหารออกแนวคาว ทำมาจากแป้งข้าวโพดค่ะหรือที่เราเรียกว่า Tortilla..
+                </p>
+                <span><a href="rec_2.html">อ่านต่อ >></a></span>
+            </div>
+        </div>
+        <div class="cardbox">
+            <div class="img">
+                <img src="./img/rec/picvadapav.jpg" width="100%"/>
+            </div>
+            <div class="content">
+                <h3>วาดะเปา(Vada Pav or Vada Pao)</h3>
+                <p>
+                    อาหารอีกหนึ่งประเทศที่อยู่ไม่ไกลจากประเทศไทย คืออาหารอิเดียที่หลาย ๆ คน อาจไม่ถูกใจนักเพราะอาหารอินเดียวจะใส่เครื่องเทศกลิ่นแรง แต่ก็อาจจะยังมีคนอีกส่วนที่ชื่นชอบอาหารรสชาติแนวนี้..
+                </p>
+                <span><a href="rec_3.html">อ่านต่อ >></a></span>
+            </div>
+        </div>
+        <div class="cardbox">
+            <div class="img">
+                <img src="./img/rec/picprimavera.jpg" width="100%"/>
+            </div>
+            <div class="content">
+                <h3>พาสต้า พริมาเวร่า (Pasta primavera)</h3>
+                <p>
+                    เมื่อพูดถึงอาหารจำพวกพิซซ่า และพาสต้า อาหารอิตาลีถือเป็นอาหารชั้นเลิศของยุโรปมาช้านาน และภัตตาคารอิตาลีดัง ๆ ก็กระจายตัวกันอยู่ทั่วโลก แน่นอนว่าอิตาลีย่อมมีอาหารพื้นถื่นให้คนจากต่างแดนได้ลิ้ลองกันอีกมากมาย..
+                </p>
+                <span><a href="rec_4.html">อ่านต่อ >></a></span>
+            </div>
+        </div>
+        <div class="cardbox">
+            <div class="img">
+                <img src="./img/rec/picSouvlaki.jpg" width="100%"/>
+            </div>
+            <div class="content">
+                <h3>ซูฟลากิ (Souvlaki)</h3>
+                <p>
+                    อีกหนึ่งประเทศที่เคยประสอบปัญหาเศรษฐกิจอย่างหนัก แต่ในแง่อาหารและการท่องเที่ยว ยังถือเป็นประเทศยอดฮิตอันดับต้น ๆ ของยุโรป นั่นก็คือประเทศกรีซ อาหารกรีซเป็นอาหารแนวประเทศแถบทะเลเมดิเตอร์เรเนียนที่เน้นชีส..
+                </p>
+                <span><a href="rec_5.html">อ่านต่อ >></a></span>
+            </div>
+        </div>
     </div>
 </body>
 </html>

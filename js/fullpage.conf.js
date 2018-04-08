@@ -3,10 +3,10 @@ $(document).ready(function() {
         //Navigation
         menu: '#menu',
         lockAnchors: false,
-        anchors:['home', 'blog', ],
+        anchors:['home', 'review', 'recommend', ],
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['home', 'blog', ],
+        navigationTooltips: ['home', 'review', 'recommend', ],
         showActiveTooltip: false,
         slidesNavigation: false,
         slidesNavPosition: 'bottom',

@@ -6,103 +6,43 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<style>
-		body {
-			margin: 0;
-			padding: 0;
-		}
-		nav {
-			box-sizing: border-box;
-			width: 100%;
-			height: 50px;
-			padding-left: 10%;
-			padding-right: 10%;
-			background: burlywood;
-		}
-		nav .logo {
-			padding-top: 16px;
-			float: left;
-		}
-		nav ul {
-			list-style-type: none;
-			float: right;
-		}
-		nav li {
-			display: inline;
-		}
-		nav a {
-			text-decoration: none;
-			color: black;
-		}
-		nav a:hover {
-			color: white;
-		}
-		nav li:not(#first-li) {
-			margin-left: 25px;
-		}
-		section {
-			padding-left: 10%;
-			padding-right: 10%;
-		}
-		.overlay-text {
-			box-sizing: border-box;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			background: rgba(255, 255, 255, 0.3);
-			width: 100%;
-			height: 10%;
-			min-height: 10%;
-			text-align: center;
-			padding-top: 25px;
-		}
-		.line {
-			border-bottom: 1px solid black;
-
-		}
-		.checked {
-			color: orange;
-		}
-		
-	</style>
+	<link rel="stylesheet" href="./css/initial.css">
+	<link rel="stylesheet" href="./css/review.css">
 </head>
 <body>
 	<nav>
-		<div class="logo">logo</div>
-		<ul>
-			<li id="first-li"><a href="index.html">Home</a></li>
-			<li><a href="review.html">Review</a></li>
-			<li><a href="recipe.html">Recipe</a></li>
-			<li><a href="ranking.html">Top 5</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
-	</nav>
-	<section>
-		<article id="first">
-			<div class="head-img">
-				<img src="./img/review/th-p-2.jpg" width="100%">
-				<h3><span class="overlay-text">สถานีมีหอย</span></h3>
-			</div>
-			<h2>สถานีมีหอย ตลาดหัวมุม เกษตร นวมินทร์</h2>
-			<div class="line"></div>
-			<!-- content here -->
-			<p>	ค่ำคืนวันเสาร์ ที่ 4 พย.60 เพื่อนชวนมากินกุ้ง กินหอย ที่ร้านดัง คนแน่น ที่ “ร้านสถานีมีหอย@ตลาดหัวมุม “ ย่านเกษตร-นวมินทร์ </p>
-			<center><img src="./img/review/2-1.jpg" width="30%" height="30%">
-			<p>กับคอนเซ็ปที่ว่า “เครียดเมื่อไหร่ก็แวะมา” บอกตรงๆกินหอยน่ะไม่เท่าไหร่ สบายฟินๆแต่พนักงานเสิร์ฟเนี่ย ทั้งชุดยูนิฟอร์มที่เป็นชุดนอนกับพนง.เสิร์ฟกล้ามโต๊โต กับอินเนอร์ และการบริการนี่จัดเต็ม แรงไม่ตก ขอให้ถ่ายรูปด้วยก็รีบมาถ่ายด้วยทั้งๆที่งานก้อเยอะ เสียงหัวเราะเกิดขึ้นที่ร้านนี้ตลอด กินไปขำไป ทำให้อารมณ์ดีมากๆ เมนูที่นี่จะมีกุ้งย่าง </p>
-			<center><img src="./img/review/2-2.jpg" width="30%" height="30%">
-			<p>และหอยอีก 7 ชนิด ให้เลือกทานคือ หอยชักตีน,หอยเชลล์,หอยแคลง,หอยนางรม,หอยหวาน,หอยแมลงภู่,หอยหลอด จานละ 100บาท ยกเว้นหอยนางรม เริ่มแรกคือ ที่โต๊ะจะมีตระกร้าถังเครียร์เปลือกหอยเปลือกกุ้งวางไว้ที่โต๊ะ เริ่มจากการเสิร์ฟ น้ำจิ้มซีฟู๊ด 2แบบก่อน มีสีเขียวเปรี้ยวจี๊ดจ๊าดไม่มากกับสีส้มเข้ม จะออกหวานๆหน่อย </p>
-			<center><img src="./img/review/2-4.jpg" width="30%" height="30%">
-			<p>รายการสั่ง -กุ้งย่าง : สั่งกุ้งแม่น้ำย่าง 3ตัว เลือกแบบ ราคาตัวละ 350บาท (มี 3ราคาคือ 250บ./350บ./600บ.)ตัวใหญ่อยู่ค่ะ เป็นแบบผ่ากุ้ง เนื้อนิ่มเด้งเบาๆ มันเยิ้มเบาๆก็มา หน้าตาเหมือนกุ้งแถวอยุธยาเลยน้ำจิ้ม สีส้มๆ รสจะออกหวานนิดนึง แต่จะมีไข่กุ้งด้วย -รุมโทรมหอย : เป็นการรวมมิตรหอย3หอยนั่นเอง </p>
-			<center><img src="./img/review/2-3.jpg" width="30%" height="30%">
-			<p>เสิร์ฟมาในหนึ่งถาด ประกอบด้วยหอยแคลง,หอยแมลงภู่,หอยหวาน ราคา290บาท ได้ทานหลายหอยดีค่ะ หอยแกะง่ายขนาดหอยปานกลาง </p>
-			<div class="line"></div><br/>
-			<span class="fa fa-star checked"></span>
-			<span class="fa fa-star checked"></span>
-			<span class="fa fa-star checked"></span>
-			<span class="fa fa-star checked"></span>
-			<span class="fa fa-star checked"></span><br/><br/><br/>
-		</article>
-	</section>
+        <div class="logo"><img src="./img/logo.png" width="100" height="55"></div>
+        <ul>
+            <li id="first-li"><a href="index.html">Home</a></li>
+            <li><a href="/index.html#review">Review</a></li>
+            <li><a href="recommend.html">Recommend Food</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+	<div class="main">
+		<img src="./img/review/th-p-2.jpg" width="100%">
+		<h2>สถานีมีหอย ตลาดหัวมุม เกษตร นวมินทร์</h2>
+		<div class="line"></div>
+		<!-- content here -->
+		<p>	ค่ำคืนวันเสาร์ ที่ 4 พย.60 เพื่อนชวนมากินกุ้ง กินหอย ที่ร้านดัง คนแน่น ที่ “ร้านสถานีมีหอย@ตลาดหัวมุม “ ย่านเกษตร-นวมินทร์ </p>
+		<img src="./img/review/2-1.jpg" width="50%" class="center">
+		<p>กับคอนเซ็ปที่ว่า “เครียดเมื่อไหร่ก็แวะมา” บอกตรงๆกินหอยน่ะไม่เท่าไหร่ สบายฟินๆแต่พนักงานเสิร์ฟเนี่ย ทั้งชุดยูนิฟอร์มที่เป็นชุดนอนกับพนง.เสิร์ฟกล้ามโต๊โต กับอินเนอร์ และการบริการนี่จัดเต็ม แรงไม่ตก ขอให้ถ่ายรูปด้วยก็รีบมาถ่ายด้วยทั้งๆที่งานก้อเยอะ เสียงหัวเราะเกิดขึ้นที่ร้านนี้ตลอด กินไปขำไป ทำให้อารมณ์ดีมากๆ เมนูที่นี่จะมีกุ้งย่าง </p>
+		<img src="./img/review/2-2.jpg" width="50%" class="center">
+		<p>และหอยอีก 7 ชนิด ให้เลือกทานคือ หอยชักตีน,หอยเชลล์,หอยแคลง,หอยนางรม,หอยหวาน,หอยแมลงภู่,หอยหลอด จานละ 100บาท ยกเว้นหอยนางรม เริ่มแรกคือ ที่โต๊ะจะมีตระกร้าถังเครียร์เปลือกหอยเปลือกกุ้งวางไว้ที่โต๊ะ เริ่มจากการเสิร์ฟ น้ำจิ้มซีฟู๊ด 2แบบก่อน มีสีเขียวเปรี้ยวจี๊ดจ๊าดไม่มากกับสีส้มเข้ม จะออกหวานๆหน่อย </p>
+		<img src="./img/review/2-4.jpg" width="50%" class="center">
+		<p>รายการสั่ง -กุ้งย่าง : สั่งกุ้งแม่น้ำย่าง 3ตัว เลือกแบบ ราคาตัวละ 350บาท (มี 3ราคาคือ 250บ./350บ./600บ.)ตัวใหญ่อยู่ค่ะ เป็นแบบผ่ากุ้ง เนื้อนิ่มเด้งเบาๆ มันเยิ้มเบาๆก็มา หน้าตาเหมือนกุ้งแถวอยุธยาเลยน้ำจิ้ม สีส้มๆ รสจะออกหวานนิดนึง แต่จะมีไข่กุ้งด้วย -รุมโทรมหอย : เป็นการรวมมิตรหอย3หอยนั่นเอง </p>
+		<img src="./img/review/2-3.jpg" width="50%" class="center">
+		<p>เสิร์ฟมาในหนึ่งถาด ประกอบด้วยหอยแคลง,หอยแมลงภู่,หอยหวาน ราคา290บาท ได้ทานหลายหอยดีค่ะ หอยแกะง่ายขนาดหอยปานกลาง </p>
+		<div class="line"></div>
+		<div class="star">
+			<p>ร้านนี้เราให้ : 
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+			</p>
+		</div>
+	</div>
 </body>
 </html>
