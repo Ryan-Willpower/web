@@ -7,10 +7,12 @@
     padding-right: 5%;
     margin-bottom: 3%;
     padding-bottom: 3%;
+    font-family: 'Itim', cursive;
 }
 
 .main h2 {
     text-align: center;
+    font-family: 'Sriracha', cursive;
 }
 
 .cardbox {
@@ -27,6 +29,10 @@
     height: 100%;
 }
 
+.cardbox .img img {
+    height: 100%;
+}
+
 .cardbox .content {
     flex: 7 1 70%;
 }
@@ -38,8 +44,12 @@
         height: 100%;
     }
 
-    .img {
+    .cardbox .img {
         width: 100%;
+        height: 100%;
+    }
+
+    .cardbox .img img {
         height: 100%;
     }
 }

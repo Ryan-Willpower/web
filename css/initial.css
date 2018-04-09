@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Sriracha');
+@import url('https://fonts.googleapis.com/css?family=Itim');
+
 body {
     margin: 0;
     padding: 0;
@@ -13,16 +16,22 @@ nav {
     background: burlywood;
     display: flex;
     justify-content: space-between;
+    font-family: 'Sriracha', cursive;
 }
 
 nav .logo {
     align-self: center;
 }
 
+nav .logo img {
+    width: 15%;
+}
+
 nav ul {
     font-size: 1.2em;
     align-self: center;
     list-style-type: none;
+    -webkit-padding-start: 0%;
 }
 
 nav li {
@@ -47,4 +56,32 @@ nav li:not(#first-li) {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+@media screen and (max-width: 915px) {
+    body {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    nav {
+        height: auto;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    nav .logo {
+        width: 100%;
+    }
+    
+    nav .logo img {
+        width: 200px;
+    }
+    
+    nav ul {
+        width: 100%;
+    }
+
+    nav > li {
+        flex: 0 1 100%;
+    }
 }
