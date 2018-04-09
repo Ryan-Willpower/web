@@ -1,0 +1,33 @@
+.main {
+    color: white;
+    background: rgba(63, 74, 77, 0.534);
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 3%;
+    padding-bottom: 3%;
+}
+
+.main h2 {
+    text-align: center;
+}
+
+.line {
+    border-bottom: 1px solid white;
+    width: 100%;
+    margin: 4% auto;
+}
+
+.head-img {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 915px)  {
+    .head-img {
+        width: 100%;
+        height: auto;
+    }
+}
