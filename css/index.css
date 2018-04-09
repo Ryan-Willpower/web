@@ -46,21 +46,19 @@ a:hover {
              rgba(20,20,20, .7)),
              url(../img/img1.jpg);
     color: #FFF;
-    letter-spacing: 3px;
+    /* letter-spacing: 3px; */
     width: 100%;
     text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 #one h1 {
-    transform: translateY(-50%);
-    position: relative;
-    letter-spacing: 3px;
+    /* letter-spacing: 3px; */
     font-size: 4em;
     font-weight: 100;
 }
 #one p {
-    transform: translateY(-50%);
-    position: relative;
     font-size: 2em;
 }
 
@@ -155,6 +153,23 @@ a:hover {
     flex: 8 1 80%;
 }
 
+/* page four */
+#four {
+    background-image: linear-gradient(
+             rgba(20,20,20, .7),
+             rgba(20,20,20, .7)),
+             url(../img/img1.jpg);
+    text-align: center;
+    color: white;
+}
+
+#four .main {
+    display: flex;
+    margin: 0 auto;
+    width: 75%;
+    justify-content: space-between;
+}
+
 @media screen and (max-width: 915px) {
     #two .card-content {
         flex: 0 1 80%;
@@ -180,6 +195,10 @@ a:hover {
     #three .three-cardbox img {
         height: 100%;
         width: 100%;
+    }
+
+    #four .main {
+        flex-direction: column;
     }
 }
 
