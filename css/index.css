@@ -113,38 +113,46 @@ a:hover {
     color: #FFF;
 }
 
+#three {
+    margin: -2% auto 0 auto;
+}
+
 #three h1 {
     text-align: center;
 }
 
 #three .main {
     width: 80%;
-    margin: 1% auto;
-    height: 100px;
-    border: 3px solid white;
+    margin: 2% auto;
 }
 
-#three .cardbox {
+#three .three-cardbox {
     display: flex;
+    height: 120px;
     box-sizing: border-box;
+    border: 3px solid white;
+    margin-bottom: 3%;
 }
 
-#three .cardbox img {
-    height: 100px;
-    flex-grow: 4;
+#three .three-cardbox .img {
+    flex: 2 1 20%;
     margin-right: 2%;
 }
 
-#three .cardbox .content h3, #three .cardbox .content p {
+#three .three-cardbox .img img {
+    height: 100%;
+}
+
+#three .three-cardbox .content h3, #three .three-cardbox .content p {
     margin: 0;
 }
 
-#three .cardbox .content p {
+#three .three-cardbox .content p {
     text-indent: 3em;
 }
 
-#three .cardbox .content {
-    flex-grow: 6;
+#three .three-cardbox .content {
+    flex: 8 1 80%;
 }
 
 @media screen and (max-width: 915px) {
@@ -157,6 +165,21 @@ a:hover {
     #two .card-content img {
         height: auto;
         max-height: 200px;
+    }
+
+    #three .three-cardbox {
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    #three .three-cardbox .img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #three .three-cardbox img {
+        height: 100%;
+        width: 100%;
     }
 }
 
